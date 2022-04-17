@@ -27,7 +27,7 @@ impl<'a> OrderBook<'a> {
 /// Level 2 data
 ///
 /// Values are in lot sizes.
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub struct Level {
     pub price: u64,
     pub quantity: u64,
